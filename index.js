@@ -46,9 +46,9 @@ function viewCart() {
         }
       }
     }
-    
+    return console.log(string);
   }
-  return string;
+  
 }
 
 function total() {
