@@ -62,13 +62,13 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var oldCartLength = cart.length;
   for (var i = 0;i<cart.length;i++){
     var newCart = cart[i];
     var key = Object.keys(cart[i]);
-    var keyArray = [];
     if (newCart.hasOwnProperty(item)){
       cart.splice(i,1);
-    }
+    }else if()
   }return cart;
 }
 
