@@ -24,6 +24,10 @@ function addToCart(item) {
 function viewCart() {
   if(cart.length === 0){
     return console.log("Your shopping cart is empty.");
+  }else{
+    for(var i = 0; i<cart.length;i++){
+      
+    }
   }
 }
 
