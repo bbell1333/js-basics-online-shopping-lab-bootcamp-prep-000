@@ -70,7 +70,7 @@ function removeFromCart(item) {
       cart.splice(i,1);
     }
   if (cart.length === oldCartLength){
-    return console.log("hat item is not in your cart.");
+    return console.log("That item is not in your cart.");
   }
   }return cart;
 }
