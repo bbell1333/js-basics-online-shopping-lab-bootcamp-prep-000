@@ -45,8 +45,8 @@ function viewCart() {
           string = string + `and ${key} at $${itemCost}.`;
         }
       }
-    }
-    return string;
+    }return string;
+    
   }
 }
 
