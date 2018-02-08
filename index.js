@@ -67,7 +67,7 @@ function removeFromCart(item) {
     var newCart = cart[i];
     var key = Object.keys(cart[i]);
     if (newCart.hasOwnProperty(item)){
-      cart.splice(i,1);
+      var inCart = cart.splice(i,1);
     }
   
   }return cart;
