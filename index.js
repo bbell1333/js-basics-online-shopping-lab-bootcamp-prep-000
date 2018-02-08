@@ -28,8 +28,11 @@ function viewCart() {
   }else{
     for(var i = 0; i<cart.length;i++){
       var newCart = cart[i];
-      var key = Object.keys(newCart[i]);
+      var key = Object.keys(cart[i]);
       var itemCost = newCart[key];
+      if(i === 1){
+        string = string + `${key} at $${itemCost}.`;
+      }
     }
   }
 }
