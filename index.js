@@ -22,11 +22,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var string = "In your cart, you have "
   if(cart.length === 0){
     return console.log("Your shopping cart is empty.");
   }else{
     for(var i = 0; i<cart.length;i++){
-      
+      var newCart = cart[i];
+      var key = Object.keys()
     }
   }
 }
