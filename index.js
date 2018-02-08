@@ -66,7 +66,9 @@ function removeFromCart(item) {
     var newCart = cart[i];
     var key = Object.keys(cart[i]);
     var itemCost = newCart[key];
-    if (item === key)
+    if (newCart.hasOwnProperty(item)){
+      
+    }
   }
 }
 
