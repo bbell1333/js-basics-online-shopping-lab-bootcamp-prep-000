@@ -68,7 +68,10 @@ function removeFromCart(item) {
     var key = Object.keys(cart[i]);
     if (newCart.hasOwnProperty(item)){
       cart.splice(i,1);
-    }else if()
+    }
+  if (cart.length === oldCartLength){
+    return console.log("hat item is not in your cart.");
+  }
   }return cart;
 }
 
