@@ -1,5 +1,9 @@
 var cart = [];
 
+function randomNumber(){
+  return Math.floor(Math.random() * 100) + 1;
+}
+
 function getCart() {
  return cart;
 }
@@ -10,11 +14,17 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ var itemName = item;
+ var itemPrice = randomNumber();
+ cart.push({[itemName]:itemPrice});
+ console.log(`${itemName} has been added to your cart.`);
+ return cart;
 }
 
 function viewCart() {
-  // write your code here
+  if(cart.length === 0){
+    return console.log("Your shopping cart is empty.");
+  }
 }
 
 function total() {
