@@ -69,7 +69,8 @@ function removeFromCart(item) {
     if (newCart.hasOwnProperty(item)){
       var inCart = cart.splice(i,1);
     }
-  
+    
+    }
   }return cart;
 }
 
