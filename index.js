@@ -30,7 +30,7 @@ function viewCart() {
       var newCart = cart[i];
       var key = Object.keys(cart[i]);
       var itemCost = newCart[key];
-      if(i === 1){
+      if(cart.length === 1){
         string = string + `${key} at $${itemCost}.`;
       }
     }
