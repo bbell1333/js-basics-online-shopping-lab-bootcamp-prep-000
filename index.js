@@ -34,6 +34,7 @@ function viewCart() {
         string = string + `${key} at $${itemCost}.`;
       }
     }
+    return string;
   }
 }
 
