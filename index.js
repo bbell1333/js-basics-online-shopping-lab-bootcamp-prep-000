@@ -32,6 +32,18 @@ function viewCart() {
       var itemCost = newCart[key];
       if(cart.length === 1){
         string = string + `${key} at $${itemCost}.`;
+      }else if(cart.length === 2){
+        if (i === 0 ){
+          string = string + `${key} at $${itemCost} and `;
+        }else{
+          string = string + `${key} at $${itemCost}.`;
+        }
+      }else if (cart.length > 2){
+        if (i < cart.length - 1){
+          string = string + `${key} at $${itemCost}, `;
+        }else{
+          string = string + `and ${key} at $${itemCost}.`;
+        }
       }
     }
     return string;
