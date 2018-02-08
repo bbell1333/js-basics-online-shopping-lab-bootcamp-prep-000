@@ -68,8 +68,6 @@ function removeFromCart(item) {
     
     if (newCart.hasOwnProperty(item)){
       cart.splice(i,1);
-    }else{
-      return console.log("The item is not in your cart");
     }
   }return cart;
 }
